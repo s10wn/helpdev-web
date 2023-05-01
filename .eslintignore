@@ -1,0 +1,5 @@
+webpack/*
+dist/*
+public/*
+jest.config.ts
+coverage/*

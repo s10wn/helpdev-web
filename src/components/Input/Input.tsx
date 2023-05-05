@@ -2,7 +2,7 @@ import { Field } from "formik";
 
 import styles from "./input.module.scss";
 
-import type { InputType } from "src/types/FieldType";
+import type { InputType } from "src/types/input-field-type";
 
 export const Input = ({ type, image, label }: InputType) => (
   <div className={styles.groups}>

@@ -1,11 +1,13 @@
 import { MdLogout } from "react-icons/md";
 
 import { sidelist } from "src/constant/sidelist";
-import { ItemSide } from "../ItemSide/ItemSide";
+import { ItemSide } from "src/components/ItemSide/ItemSide";
+
+import styles from "./sidebar.module.scss";
 
 export const SideBar = () => (
-  <div className="sidebar flex-c flex-sb">
-    <div className="brand">
+  <div className={styles.sidebar}>
+    <div className={styles.brand}>
       <svg width="70" height="70" viewBox="0 0 348 324" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clipPath="url(#clip0_96_63)">
           <path
@@ -164,20 +166,15 @@ export const SideBar = () => (
       HELPDEV <br />
       (TEST)
     </div>
-    <div className="side-nav">
+    <div className={styles.side_nav}>
       {sidelist.map((item) => (
         <ItemSide key={item.id} link={item.link} icon={item.icon} title={item.title} />
       ))}
     </div>
 
-    <div className="log-out">
-      <div className="menu-item flex">
-        <div className="icon">
-          <MdLogout />
-        </div>
-
-        <p>Logout</p>
-      </div>
+    <div className={styles.log_out}>
+      <MdLogout />
+      <p>Logout</p>
     </div>
   </div>
 );

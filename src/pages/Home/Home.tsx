@@ -26,16 +26,18 @@ export const Home = () => {
       <div className={styles.main}>
         <Navbar />
         <div className={styles.main_page}>
-          {language_card.map((card) => (
-            <LanguageCard
-              key={card.id}
-              name={card.name}
-              image={card.image}
-              link={card.link}
-              description={card.description}
-              projectlength={card.projectlength}
-            />
-          ))}
+          <h1 className={styles.title}>Welcome to my portfolio</h1>
+          <div className={styles.project_list}>
+            {language_card.map((card) => (
+              <LanguageCard
+                key={card.id}
+                name={card.name}
+                image={card.image}
+                link={card.link}
+                projectlength={card.projectlength}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -1,0 +1,15 @@
+.main {
+  margin-left: 17%;
+  padding: 20px;
+
+  .main_page {
+    padding: 20px 0;
+
+    .project_list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.menu_item {
+  margin: 25px auto;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  text-align: right;
+  cursor: pointer;
+
+  opacity: 0.7;
+  color: #ffffff;
+
+  @media (max-width: 768px) {
+    margin: 40px auto;
+  }
+  &:hover {
+    opacity: 1;
+  }
+  &:hover p {
+    color: #8c519c;
+  }
+  &:hover .icon {
+    color: #c778dd;
+  }
+  p {
+    color: #ffffff;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 22px;
+    transition: 0.2s ease-in-out;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .icon {
+    color: #ffffff;
+    height: 24px;
+    font-size: 24px;
+    transition: 0.2s ease-in-out;
+  }
+}

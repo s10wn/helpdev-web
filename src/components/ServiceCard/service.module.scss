@@ -1,0 +1,27 @@
+.service_card {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  border: 1px solid #abb2bf;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+  border-radius: 10px;
+
+  img {
+    width: 35px;
+    height: 35px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &:hover {
+    border: 1px solid #8c519c;
+  }
+}

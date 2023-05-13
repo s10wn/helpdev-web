@@ -99,7 +99,6 @@
     "@typescript-eslint/quotes": ["off"],
     "@typescript-eslint/no-use-before-define": "error",
     "@typescript-eslint/no-empty-interface": "error",
-    "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/ban-ts-comment": "error",
     "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/no-unused-vars": [
@@ -115,8 +114,6 @@
         "leadingUnderscore": "forbid",
         "modifiers": ["const", "global", "destructured", "async", "exported"]
       },
-
-      //TODO: дополнить правило так, чтобы не используемые переменные со знаком _ игнорировались
       {
         "selector": "default",
         "format": ["camelCase"],
@@ -250,7 +247,7 @@
     ],
     "no-else/no-else": "error",
     "no-restricted-syntax": [
-      "error",
+      "warn",
       {
         "selector": "ExportDefaultDeclaration",
         "message": "Prefer named exports"
@@ -290,6 +287,16 @@
       "files": ["*.ts"],
       "rules": {
         "@typescript-eslint/no-non-null-assertion": "error",
+        "jsx-a11y/label-has-for": [
+          2,
+          {
+            "components": [],
+            "required": {
+              "every": ["nesting", "id"]
+            },
+            "allowChildren": false
+          }
+        ],
         "@typescript-eslint/explicit-function-return-type": "error"
       }
     }

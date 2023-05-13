@@ -4,14 +4,18 @@ import styles from "./card.module.scss";
 
 import type { LanguageCardType } from "src/types/language-card.type";
 
-export const LanguageCard = ({ name, image, link, projectlength }: LanguageCardType) => (
-  <div className={styles.language_card}>
-    <div>
-      <img src={image} alt="" />
+export const LanguageCard = ({ name, image, link, projectlength, description }: LanguageCardType) => (
+  <div className={styles.card}>
+    <div className={styles.card_top}>
+      <img src={image} alt={name} />
+      <div>
+        <h1>{name}</h1>
+        <h3>{projectlength} проектов</h3>
+      </div>
     </div>
-    <h3>{projectlength} проектов</h3>
-    <h1>{name}</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis amet expedita fugit tempora neque quae?</p>
-    <Link to={link}>Подробнее</Link>
+    <p>{description}</p>
+    <div className={styles.link_btn}>
+      <Link to={link}>Посмотреть</Link>
+    </div>
   </div>
 );

@@ -3,23 +3,18 @@ import type { LanguageCardType } from "src/types/language-card.type";
 export const language_card: LanguageCardType[] = [
   {
     id: 0,
-    name: "HTML",
-    image: "https://cdn.pixabay.com/photo/2022/08/28/01/40/cyberpunk-city-7415576__480.jpg",
+    name: "Front-end",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
     link: "https://ru.wikipedia.org/wiki/HTML",
-    projectlength: 12,
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, voluptate.",
+    projectlength: 3,
   },
   {
     id: 1,
-    name: "CSS",
-    image: "https://cdn.pixabay.com/photo/2022/08/28/01/40/cyberpunk-city-7415576__480.jpg",
-    link: "https://ru.wikipedia.org/wiki/CSS",
-    projectlength: 15,
-  },
-  {
-    id: 2,
-    name: "JavaScript",
-    image: "https://cdn.pixabay.com/photo/2022/08/28/01/40/cyberpunk-city-7415576__480.jpg",
-    link: "https://ru.wikipedia.org/wiki/JavaScript",
-    projectlength: 20,
+    name: "Figma",
+    image: "https://s3-alpha.figma.com/hub/file/3152337111/0e0f44e4-8de2-49c9-b8f0-406ece8fd1b6-cover.png",
+    link: "https://ru.wikipedia.org/wiki/HTML",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, voluptate.",
+    projectlength: 5,
   },
 ];

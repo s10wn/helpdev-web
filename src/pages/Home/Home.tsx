@@ -2,12 +2,12 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Navbar } from "src/components/Navbar/Navbar";
-import { LanguageCard } from "src/components/LanguageCard/LanguageCard";
 import { SideBar } from "src/components/SideBar/SideBar";
 
 import { checkTokenValidity } from "src/utils/check-token.util";
 
 import { language_card } from "src/constant/language-card";
+import { LanguageCard } from "src/components/LanguageCard/LanguageCard";
 
 import styles from "./home.module.scss";
 
@@ -26,7 +26,6 @@ export const Home = () => {
       <div className={styles.main}>
         <Navbar />
         <div className={styles.main_page}>
-          <h1 className={styles.title}>Welcome to my portfolio</h1>
           <div className={styles.project_list}>
             {language_card.map((card) => (
               <LanguageCard
@@ -35,6 +34,7 @@ export const Home = () => {
                 image={card.image}
                 link={card.link}
                 projectlength={card.projectlength}
+                description={card.description}
               />
             ))}
           </div>

@@ -1,6 +1,6 @@
 import { MdLogout } from "react-icons/md";
 
-import { sidelist } from "src/constant/sidelist";
+import { sidelist } from "src/constant/side-list";
 import { ItemSide } from "src/components/ItemSide/ItemSide";
 
 import styles from "./sidebar.module.scss";

@@ -13,8 +13,6 @@
     "allowJs": true,
     "typeRoots": ["node_modules/@types"],
     "baseUrl": ".",
-    "paths": {
-      "@utils/*": ["src/utils/*"]
-    }
+    "paths": {}
   }
 }

@@ -23,7 +23,7 @@ export const Home = () => {
   return (
     <section>
       <SideBar />
-      <div className={styles.main}>
+      <div className="main">
         <Navbar />
         <div className={styles.main_page}>
           <div className={styles.project_list}>

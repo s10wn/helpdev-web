@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { Home, Login, NotFound, Register } from "./pages";
+import { Home, Login, NotFound, Register, Setting } from "./pages";
 
 export const App = () => (
   <BrowserRouter>
@@ -11,6 +11,7 @@ export const App = () => (
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
       </Route>
+      <Route path="/setting" element={<Setting />} />
     </Routes>
   </BrowserRouter>
 );

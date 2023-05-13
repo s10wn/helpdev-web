@@ -23,6 +23,10 @@ dd {
 
   font: inherit;
 }
+.main {
+  margin-left: 17%;
+  padding: 20px;
+}
 
 body {
   scroll-behavior: smooth;

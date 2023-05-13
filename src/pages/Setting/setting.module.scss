@@ -1,0 +1,79 @@
+.setting_title {
+  margin-bottom: 50px;
+  h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+  }
+}
+.setting_form {
+  width: 60%;
+  .setting_card {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    h4 {
+      width: 300px;
+      font-size: 22px;
+      column-gap: 5px;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-weight: 500;
+      button {
+        margin-top: 8px;
+      }
+    }
+    input {
+      border-radius: 5px;
+      background: transparent;
+      border: 2px solid #326cf9;
+      height: 50px;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 300;
+      width: 40%;
+      color: #fff;
+    }
+  }
+  .setting_link {
+    width: 40%;
+    h1 {
+      color: #ffffff;
+      width: 300px;
+      font-size: 22px;
+      column-gap: 5px;
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+    }
+    .setting_card {
+      padding: 10px;
+      width: 150px;
+      margin-right: 20px;
+      border: 2px solid #636363;
+      display: flex;
+      align-items: center;
+      color: #636363;
+      column-gap: 5px;
+      cursor: alias;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+    .linked {
+      color: #326cf9;
+      cursor: pointer;
+      border: 2px solid #326cf9;
+    }
+  }
+  .setting_form_btn {
+    margin-bottom: 30px;
+    button {
+      font-size: 20px;
+      font-weight: 500;
+      background: #326cf9;
+      padding: 10px 40px;
+      border-radius: 5px;
+    }
+  }
+}
